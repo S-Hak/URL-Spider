@@ -14,7 +14,6 @@ print("""
 	        \/      \/           \/        \/ 
 		    U R L - S p i d e r
 			From : ShiLE
-
 """)
 
 try:
