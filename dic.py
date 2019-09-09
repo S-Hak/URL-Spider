@@ -46,7 +46,7 @@ def combination_url(keyList, suffixList):
 
 
 # dic 路径
-MAINPATH = str('./dic/')
+MAINPATH = str('./')
 # MAINPATH = ''
 
 
