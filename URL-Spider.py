@@ -232,7 +232,18 @@ def main():
     print("\n\n" + "=" * 99 +"\n[+] ALL status:20x print >>>>")
     for i in ALL_LIST:
         print(i)
+    print("\n\n" + "=" * 99 +"\n[+] ALL status:40x print >>>>")
+    for i in C40x_LIST:
+        print(i)
+    print("\n\n" + "=" * 99 +"\n[+] ALL status:403 print >>>>")
+    for i in C403_LIST:
+        print(i)
+    print("\n\n" + "=" * 99 +"\n[+] ALL status:other print >>>>")
+    for i in OTHER_LIST:
+        print(i)
+        
 
+        
 
 if __name__ == '__main__':
     main()
