@@ -4,6 +4,7 @@
 import time
 import re
 import sys
+import os
 
 print("""
 
@@ -17,8 +18,6 @@ print("""
 		From:https://github.com/ShiLL-L
 """)
 
-import os
-
 try:
     import requests
 except:
@@ -28,7 +27,7 @@ except:
     """)
     sys.exit()
 
-
+ONCE_TIME = 0.2
 
 
 UA = {'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
@@ -177,7 +176,7 @@ def over_url(url_list, url):
                 print("[-] test URL:" + over_url_a + " >> the URL It already exists.")
 
             else:
-                time.sleep(0.2)
+                time.sleep(ONCE_TIME)
                 resp = requests.get(over_url_a, headers=UA)
                 if str(resp.status_code) == '403':
                     print("[-] test URL:" + over_url_a + " >> status: 403 page not found")
